@@ -1,24 +1,31 @@
 body{
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(to bottom, #ff3366, #333333);
+    background-color: #333333;
 }
 
+/* og color #ff3366 */
 /*/*//*/*/
 
 .navHeader{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    height: 70px;
+    background-color: rgb(117, 23, 46);
+
+}
+.navImage{
+    width: 45px;
 }
 h1{
-    display: block;
-    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     margin: 10px;
     padding: 5px;
 
-    background-color: rgb(222, 42, 86);
-    border: 3px #555555 solid;
-    border-radius: 5px;
 
     font-weight: bold;
     font-style: oblique;
@@ -28,49 +35,52 @@ h1{
 }
 h1 a{
     text-decoration-line: none;
+    color: black;
 }
 h1 a:hover{
     text-decoration-line: none;
-    color: darkgrey;
+    color: #424242;
 }
 h1 a:visited{
     text-decoration-line: none;
     color: black;
 }
 h2{
-    margin: 0;
-    padding-left: 10px;
-    padding-bottom: 10px;
-
-    background-color: rgba(117, 23, 46, 0.8);
+    padding-left: 20px;
+    font-style: oblique;
+    font-weight: lighter;
+    text-decoration: underline;
 }
 
 /*/*//*/*/
 
 ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
 
     background-color: rgba(180, 34, 70, 0.8);
 }
+
 .LIST{
     margin: 0 10px;
     padding: 0;
     flex-basis: 21%;
     flex-grow: 1;
     min-width: 109px;
-    max-width: 300px;
+    max-width: 200px;
 
-    border: 4px solid black;
-    border-radius: 5px;
-    background-color: #333333;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     list-style: none;
     font-size: 30px;
-
+}
+.LIST:hover{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .LIST A{
     margin: 0;
@@ -81,10 +91,9 @@ ul{
     text-wrap: normal;
     text-decoration-line: none;
 }
-.navig{
+.navMain{
     position:fixed;
     top: 0;
-    z-index: 1;
     width: 100%;
     background-color: rgba(117, 23, 46, 0.8);
 }
@@ -95,14 +104,12 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 136px;
     height: 900px;
+    background-image: url("images/gaycouplegrad.jpg");
+    background-size: cover;
 }
-.mainPart::after{
-    background-image: url("images/gaycouple.jpg");
-    background-size: auto;
-    opacity: 20%;
-}
+
 .registerNowSection{
     display: flex;
     justify-content: space-around;
@@ -110,9 +117,9 @@ ul{
     width: auto;
     height: auto;
     margin: 30% 0 0 50%;
-    border: 4px solid black;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: #555555;
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
 .registerNowButton{
@@ -121,19 +128,20 @@ ul{
     margin: 15px;
     padding: 10px;
 
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 4px;
 
-    background-color: #727272;
+    background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
     font-size: 50px;
     text-shadow: 3px 2px black;
-
-
+}
+.registerNowButton:hover{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .registerNowParagraph{
     width: auto;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 3px black;
@@ -143,10 +151,20 @@ ul{
 /*/*//*/*/
 
 footer{
-    margin: 15px;
+    padding: 15px;
+    background-image: linear-gradient(rgb(91, 65, 75), rgb(52, 51, 51));
 }
 
 /*/*//*/*/
+
+@media screen and (max-width: 900px) {
+    .registerNowButton{
+        font-size: 30px;
+    }
+    .registerNowParagraph{
+        font-size: 15px;
+    }
+}
 
 @media screen and (max-width: 700px) {
     .LIST {
@@ -157,13 +175,28 @@ footer{
 }
 
 @media screen and (max-width: 550px) {
+    h1{
+        font-size: 30px;
+    }
+    .navImage{
+        width: 27px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    ul{
+        padding: 0;
+    }
     .LIST {
         border-radius: 0;
         margin: 0;
+        border-style: none;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
     }
-
     .LIST A{
         padding: 0;
     }
 }
 
+/*66, 54, 58*/
