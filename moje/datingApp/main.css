@@ -130,7 +130,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
+    height: auto;
 
     margin-top: 136px;
 
@@ -145,7 +145,8 @@ ul{
     width: auto;
     height: auto;
 
-    margin: 30% 5% 0 50%;padding: 15px;
+    margin: 30% 5% 150px 50%;
+    padding: 15px;
 
     border: 1px solid black;
     border-radius: 5px;
@@ -211,6 +212,7 @@ footer{
     width: auto;
     height: auto;
 
+    margin: 300px 0;
     padding: 7%;
 
     border: 1px solid black;
@@ -269,30 +271,26 @@ footer{
 /*Download*/
 /*/*//*/*/
 
-.downloadPageDowdnloadSection{
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    height: 20%;
-
-    border: 1px solid black;
-    border-radius: 100px;
-
-    background-color: rgb(180, 34, 70);
-}
-.downloadPageDowdnloadSection:hover{
-    background-color: rgb(222, 43, 88);
-}
 .downloadPageDowdnloadButton{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px;
+    height: 170px;
 
+    margin: 400px 0;
+    border: 1px solid black;
+    border-radius: 100px;
 
 
     font-size: 200%;
     color: white;
     text-decoration: none;
+
+    background-color: rgb(180, 34, 70);
+}
+.downloadPageDowdnloadSection a:hover{
+    background-color: rgb(222, 43, 88);
 }
 .downloadPageDowdnloadButton img{
     width: 25px;
@@ -319,11 +317,17 @@ footer{
 /*Contact*/
 /*/*//*/*/
 
+.contactPageSection img{
+    width: 35px;
+}
+
 /*/*//*/*/
 /*FAQ*/
 /*/*//*/*/
 
 .mainPartFaq{
+    padding-bottom: 150px;
+
     height: auto;
 }
 .faqPageText h5{
@@ -332,6 +336,57 @@ footer{
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+/*/*//*/*/
+/*Not logged in page*/
+/*/*//*/*/
+
+.notLoggedInPageSection{
+    margin-top: 0;
+}
+.notLoggedInPageParagraph{
+    display:flex;
+    justify-content: center;
+    gap: 7px;
+
+    font-size: 30px;
+}
+.notLoggedInPageSpan{
+    text-decoration: line-through;
+}
+
+/*/*//*/*/
+/*Not logged in page*/
+/*/*//*/*/
+
+.reportPagePart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+.reportPageSection{
+    width: auto;
+    margin: 30px;
+    height: 700px;
+
+
+    text-align: center;
+}
+.reportPageSection img{
+    width: 300px;
+}
+
+/*/*//*/*/
+/*User details*/
+/*/*//*/*/
+
+.userDetailsSection{
+    margin: 150px;
+    padding: 50px;
+}
+
 
 /*/*//*/*/
 /*Media*/
@@ -396,6 +451,12 @@ footer{
     }
     .mainPart{
         margin-top: 93px;
+    }
+    .downloadPageDowdnloadButton {
+        width: 250px;
+        height: 100px;
+        
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 460px) {

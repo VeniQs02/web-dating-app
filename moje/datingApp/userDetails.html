@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Log In</title>
+  <title>User details</title>
   <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" href="images/firelogo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -14,6 +15,9 @@
   <div class="navHeader">
     <h1><a href="index.html"><img class="navImage" src="images/firelogo.png" alt="logo">Tender</a></h1>
     <h2>Cozy place for cozy people</h2>
+    <a class="navLog" href="login.html">
+      <button class="navLogIn">Log in</button>
+    </a>
   </div>
   <ul>
     <li class="LIST"><a href="mainpage.html">Main page</a></li>
@@ -22,25 +26,27 @@
     <li class="LIST"><a href="faq.html">FAQ</a></li>
   </ul>
 </nav>
-<main class="mainPart mainPartLogIn">
-  <section class="logInNowSection">
-    <label for="nickname">Nickname</label>
-    <input type="text" id="nickname">
-    <label for="email">Email</label>
-    <input type="email" id="email">
-    <label for="password">Password</label>
-    <input type="password" id="password">
-    <label for="passwordConfirmation">Confirm Password</label>
-    <input type="password" id="passwordConfirmation">
-    <button class="registerButton" onclick="alert('Page_change_here');">Log in</button>
-    <p class="logInNowParagraph">Already have an account? <a href="login.html">Log in!</a></p>
+<main class="mainPart userDetailsPart">
+  <section class="mainPageSection userDetailsSection">
+    <p>Avatar: <img src="images/firelogo.png" alt="awatar" style="width: 50px"></p>
+    <p>User: </p>
+    <label for="userPassword">Password:</label>
+    <input type="password" id="userPassword" name="userPassword">
+    <label>
+      <input type="checkbox" onclick="showUserPassword()"> Show Password
+    </label>
+    <p>Email: </p>
   </section>
 </main>
+
+
 <footer>
   <h4>Befriending people never was so easy!</h4>
   <label>
     <button onclick="alert('Bonk!');">Horny?</button>
   </label>
 </footer>
+
 </body>
+
 </html>
